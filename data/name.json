@@ -1,0 +1,10 @@
+[
+  { "text": "what is your name", "intent": "name" },
+  { "text": "what's your name", "intent": "name" },
+  { "text": "tell us your name", "intent": "name" },
+  { "text": "tell me your name", "intent": "name" },
+  { "text": "who are you", "intent": "name" },
+  { "text": "what was your name", "intent": "name" },
+  { "text": "who is this", "intent": "name" },
+  { "text": "who's this", "intent": "name" }
+]
