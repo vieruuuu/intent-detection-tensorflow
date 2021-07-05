@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-let trainData = [];
+let trainingData = [];
 
 let files = fs.readdirSync(__dirname);
 
@@ -14,7 +14,18 @@ for (let i = 0; i < files.length; i++) {
 
   let data = require(filename);
 
-  trainData = trainData.concat(data);
+  trainingData = trainingData.concat(data);
 }
 
-module.exports = trainData;
+const tensor = {
+  intends: ["age", "name"],
+  mapping(t) {
+    return [
+      //
+      t.intent == "age" ? 1 : 0,
+      t.intent == "name" ? 1 : 0,
+    ];
+  },
+};
+
+module.exports = { trainingData, tensor };
