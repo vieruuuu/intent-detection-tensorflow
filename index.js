@@ -6,7 +6,7 @@ async function main() {
   //let model = await train("Model");
   let model = await load("Model");
 
-  let prediction = await run(model, "please tell me your age");
+  let prediction = await run(model, "mi l sugi");
   console.log(prediction);
 }
 
