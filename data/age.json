@@ -1,5 +1,0 @@
-[
-  { "text": "what is your age", "intent": "age" },
-  { "text": "what's your age", "intent": "age" },
-  { "text": "how old are you", "intent": "age" }
-]
